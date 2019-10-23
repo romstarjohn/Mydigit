@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/user_manager"
+            android:icon="@drawable/ic_person_add_24dp"
+            android:title="Manage User"></item>
+        <item android:id="@+id/report_manager"
+            android:icon="@drawable/ic_report_24dp"
+            android:title="Report"></item>
+        <item android:id="@+id/articles_manager"
+            android:icon="@drawable/ic_add_shopping_cart_24dp"
+            android:title="Manage Articles"></item>
+        <item android:id="@+id/account"
+            android:icon="@drawable/ic_account_circle_24dp"
+            android:title="My Account"></item>
+        <item android:id="@+id/setting_manager"
+            android:icon="@drawable/ic_settings_24dp"
+            android:title="Setting"></item>
+    </group>
+</menu>

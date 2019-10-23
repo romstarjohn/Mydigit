@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/logo_store_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_company_round" />
+
+    <TextView
+        android:id="@+id/shopName"
+        android:layout_width="wrap_content"
+        android:layout_height="12dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/shop_name"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageLogo" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutUserId"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shopName">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/userId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/userid_ht"
+            android:inputType="numberSigned|number"
+            android:textStyle="bold" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutUserId">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/userPin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="PIN "
+            android:inputType="numberSigned|numberPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarLoginView"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="134dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/LoginViewError"
+        android:layout_width="400dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/loginPad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
+
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/loginPad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="@dimen/Keypad_button_size"
+            android:layout_height="@dimen/Keypad_button_height"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="@dimen/Keypad_button_size"
+            android:layout_height="@dimen/Keypad_button_height"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="@dimen/Keypad_button_size"
+            android:layout_height="@dimen/Keypad_button_height"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="@dimen/Keypad_button_size"
+            android:layout_height="@dimen/Keypad_button_height"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btn_5"
+            android:layout_width="@dimen/Keypad_button_size"
+            android:layout_height="@dimen/Keypad_button_height"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btn_6"
+            android:layout_width="@dimen/Keypad_button_size"
+            android:layout_height="@dimen/Keypad_button_height"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/btn_7"
+            android:layout_width="@dimen/Keypad_button_size"
+            android:layout_height="@dimen/Keypad_button_height"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/btn_8"
+            android:layout_width="@dimen/Keypad_button_size"
+            android:layout_height="@dimen/Keypad_button_height"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btn_9"
+            android:layout_width="@dimen/Keypad_button_size"
+            android:layout_height="@dimen/Keypad_button_height"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/btn_0"
+            android:layout_width="@dimen/Keypad_button_size"
+            android:layout_height="@dimen/Keypad_button_height"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="@dimen/Keypad_button_size"
+            android:layout_height="@dimen/Keypad_button_height"
+            android:text="CLEAR" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="@dimen/Keypad_button_size"
+            android:layout_height="0dp"
+            android:layout_rowSpan="2"
+
+            android:layout_gravity="fill_vertical"
+            android:backgroundTint="#4CAF50"
+            android:text="ENTER" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/loginPad">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PIN forgotten ?"
+            android:textSize="@dimen/textSize" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Please contact the manager"
+            android:textSize="@dimen/textSize" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
